@@ -8,9 +8,9 @@
   <description>atividade_persistencia</description>
   <dependencies>
   	<dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.4.32.final</version>
+       <groupId>org.hibernate</groupId>
+       <artifactId>hibernate-core</artifactId>
+       <version>5.4.32.final</version>
      </dependency>
      <dependency>
     	<groupId>org.postgresql</groupId>
