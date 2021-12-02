@@ -30,9 +30,6 @@ public class VendaVO {
 	@JoinColumn(nullable = false, name="id_vendedor")
 	private VendedorVO vendedor;
 	
-	@OneToMany
-	private List<ItemVendaVO> itensVenda;
-
 	public int getCodigo() {
 		return codigo;
 	}
@@ -65,13 +62,5 @@ public class VendaVO {
 		this.vendedor = vendedor;
 	}
 
-	public List<ItemVendaVO> getItensVenda() {
-		return itensVenda;
-	}
-
-	public void setItensVenda(List<ItemVendaVO> itensVenda) {
-		this.itensVenda = itensVenda;
-	}
-	
 	
 }

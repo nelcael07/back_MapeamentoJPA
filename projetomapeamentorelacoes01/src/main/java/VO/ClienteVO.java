@@ -18,9 +18,9 @@ public class ClienteVO {
 	private int codigo;
 	
 	private String nome;
-	
-	@OneToMany
-	private List<VendaVO> vendas;
+//	
+//	@OneToMany
+//	private List<VendaVO> vendas;
 
 	public int getCodigo() {
 		return codigo;
@@ -38,13 +38,13 @@ public class ClienteVO {
 		this.nome = nome;
 	}
 
-	public List<VendaVO> getVendas() {
-		return vendas;
-	}
-
-	public void setVendas(List<VendaVO> vendas) {
-		this.vendas = vendas;
-	}
-	
+//	public List<VendaVO> getVendas() {
+//		return vendas;
+//	}
+//
+//	public void setVendas(List<VendaVO> vendas) {
+//		this.vendas = vendas;
+//	}
+//	
 	
 }

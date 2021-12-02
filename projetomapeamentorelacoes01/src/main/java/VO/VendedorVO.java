@@ -9,7 +9,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="venda")
+@Table(name="vendedor")
 public class VendedorVO {
 
 	@Id
@@ -20,8 +20,8 @@ public class VendedorVO {
 	
 	private float perComissao;
 	
-	@OneToMany
-	private List<VendaVO> vendas;
+//	@OneToMany
+//	private List<VendaVO> vendas;
 
 	public int getCodigo() {
 		return codigo;
@@ -47,12 +47,12 @@ public class VendedorVO {
 		this.perComissao = perComissao;
 	}
 
-	public List<VendaVO> getVendas() {
-		return vendas;
-	}
-
-	public void setVendas(List<VendaVO> vendas) {
-		this.vendas = vendas;
-	}
+//	public List<VendaVO> getVendas() {
+//		return vendas;
+//	}
+//
+//	public void setVendas(List<VendaVO> vendas) {
+//		this.vendas = vendas;
+//	}
 	
 }
