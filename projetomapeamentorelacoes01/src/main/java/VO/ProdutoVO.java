@@ -62,21 +62,21 @@ public class ProdutoVO {
 		this.precoVenda = precoVenda;
 	}
 	
-	@ManyToMany
-	@JoinTable(name = "produto_fornecedor", 
-	  joinColumns = {@JoinColumn(name = "codigo_produto")}, 
-	  inverseJoinColumns = {@JoinColumn(name = "codigo_fornecedor")}
-	)
-	private List<FornecedorVO>fornecedores;
+//	@ManyToMany
+//	@JoinTable(name = "produto_fornecedor", 
+//	  joinColumns = {@JoinColumn(name = "codigo_produto")}, 
+//	  inverseJoinColumns = {@JoinColumn(name = "codigo_fornecedor")}
+//	)
+//	private List<FornecedorVO>fornecedores;
 
 
-	public List<FornecedorVO> getFornecedores() {
-		return fornecedores;
-	}
-
-	public void setFornecedores(List<FornecedorVO> fornecedores) {
-		this.fornecedores = fornecedores;
-	}
+//	public List<FornecedorVO> getFornecedores() {
+//		return fornecedores;
+//	}
+//
+//	public void setFornecedores(List<FornecedorVO> fornecedores) {
+//		this.fornecedores = fornecedores;
+//	}
 	
 	
 	
