@@ -1,6 +1,7 @@
 package ProjetoMapeamentoRelacoes01;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import Apps.ClienteApps;
@@ -13,6 +14,8 @@ import VO.ClienteVO;
 import VO.FornecedorVO;
 import VO.GrupoProdutoVO;
 import VO.ProdutoVO;
+import VO.VendaVO;
+import VO.VendedorVO;
 
 public class Principal {
 
@@ -43,6 +46,7 @@ public class Principal {
 		produto.setGrupoProduto(grupoProduto);
 		produto.setNome("Prato");
 		produto.setPrecoVenda(35);
+		
 		produtoPersis.incluir(produto);
 		
 		ProdutoVO produto2 = new ProdutoVO();
@@ -87,20 +91,52 @@ public class Principal {
 		cliente.setNome("Nelcael");
 		clientePersis.incluir(cliente);
 		
-		ClienteVO cliente2 = new ClienteVO();
-		cliente2.setNome("Ludmila");
-		clientePersis.incluir(cliente2);
-		
 		ClienteVO cliente3 = new ClienteVO();
 		cliente3.setNome("Geraldo");
 		clientePersis.incluir(cliente3);
 		
+		ClienteVO cliente2 = new ClienteVO();
+		cliente2.setNome("Ludmila");
+		clientePersis.incluir(cliente2);
 		
+//		VENDEDOR
+		VendedorVO vendedor = new VendedorVO();
+		vendedor.setNome("Rosangela");
+		vendedor.setPerComissao(400);
+		vendedorPersis.incluir(vendedor);
 		
+		VendedorVO vendedor2 = new VendedorVO();
+		vendedor2.setNome("Paulo");
+		vendedor2.setPerComissao(200);
+		vendedorPersis.incluir(vendedor2);
 		
+		VendedorVO vendedor3 = new VendedorVO();
+		vendedor3.setNome("Rodrigo");
+		vendedor3.setPerComissao(600);
+		vendedorPersis.incluir(vendedor3);
 		
+//		VENDA
+		VendaVO venda = new VendaVO();
+		venda.setCliente(cliente);
+		Date data = new Date();
+		venda.setDataVenda(data);
+		venda.setVendedor(vendedor);
+		vendaPersis.incluir(venda);
 		
-
+		VendaVO venda2 = new VendaVO();
+		venda2.setCliente(cliente3);
+		Date data2 = new Date();
+		venda2.setDataVenda(data2);
+		venda2.setVendedor(vendedor2);
+		vendaPersis.incluir(venda2);
+		
+		VendaVO venda3 = new VendaVO();
+		venda3.setCliente(cliente2);
+		Date data3 = new Date();
+		venda3.setDataVenda(data3);
+		venda3.setVendedor(vendedor3);
+		vendaPersis.incluir(venda3);
+		
 	}
 
 }
